@@ -8,7 +8,7 @@ package aplicacion.fisioterapia.brazo;
  *
  * @author ild_37
  */
-public class AplicacionFisioterapiaBrazo {
+public class Main {
 
     /**
      * @param args the command line arguments
