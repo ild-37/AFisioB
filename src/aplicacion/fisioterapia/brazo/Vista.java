@@ -31,32 +31,45 @@ public class Vista extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         EstadoLabel = new javax.swing.JLabel();
         PanelBotonera = new javax.swing.JPanel();
-        btnNuevo = new javax.swing.JButton();
-        btnAbrir = new javax.swing.JButton();
-        btnSalir = new javax.swing.JButton();
-        btnGuardar = new javax.swing.JButton();
+        btnNuevoILD = new javax.swing.JButton();
+        btnAbrirILD = new javax.swing.JButton();
+        btnGuardarILD = new javax.swing.JButton();
+        btnSalirILD = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setText("AFisioB");
         getContentPane().add(jLabel1, java.awt.BorderLayout.CENTER);
 
-        EstadoLabel.setText("jLabel2");
+        EstadoLabel.setText("La vida Dura");
         getContentPane().add(EstadoLabel, java.awt.BorderLayout.PAGE_END);
 
+        PanelBotonera.setBackground(new java.awt.Color(255, 204, 255));
         PanelBotonera.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT));
 
-        btnNuevo.setText("NUEVO");
-        PanelBotonera.add(btnNuevo);
+        btnNuevoILD.setBackground(new java.awt.Color(204, 204, 255));
+        btnNuevoILD.setForeground(new java.awt.Color(0, 0, 0));
+        btnNuevoILD.setText("Nuevo");
+        btnNuevoILD.setOpaque(true);
+        PanelBotonera.add(btnNuevoILD);
 
-        btnAbrir.setText("ABRIR");
-        PanelBotonera.add(btnAbrir);
+        btnAbrirILD.setBackground(new java.awt.Color(204, 204, 255));
+        btnAbrirILD.setForeground(new java.awt.Color(0, 0, 0));
+        btnAbrirILD.setText("Abrir");
+        btnAbrirILD.setOpaque(true);
+        PanelBotonera.add(btnAbrirILD);
 
-        btnSalir.setText("SALIR");
-        PanelBotonera.add(btnSalir);
+        btnGuardarILD.setBackground(new java.awt.Color(204, 204, 255));
+        btnGuardarILD.setForeground(new java.awt.Color(0, 0, 0));
+        btnGuardarILD.setText("Guardar");
+        btnGuardarILD.setOpaque(true);
+        PanelBotonera.add(btnGuardarILD);
 
-        btnGuardar.setText("Guardar");
-        PanelBotonera.add(btnGuardar);
+        btnSalirILD.setBackground(new java.awt.Color(204, 204, 255));
+        btnSalirILD.setForeground(new java.awt.Color(0, 0, 0));
+        btnSalirILD.setText("Salir");
+        btnSalirILD.setOpaque(true);
+        PanelBotonera.add(btnSalirILD);
 
         getContentPane().add(PanelBotonera, java.awt.BorderLayout.PAGE_START);
 
@@ -70,10 +83,10 @@ public class Vista extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel EstadoLabel;
     private javax.swing.JPanel PanelBotonera;
-    private javax.swing.JButton btnAbrir;
-    private javax.swing.JButton btnGuardar;
-    private javax.swing.JButton btnNuevo;
-    private javax.swing.JButton btnSalir;
+    private javax.swing.JButton btnAbrirILD;
+    private javax.swing.JButton btnGuardarILD;
+    private javax.swing.JButton btnNuevoILD;
+    private javax.swing.JButton btnSalirILD;
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }
