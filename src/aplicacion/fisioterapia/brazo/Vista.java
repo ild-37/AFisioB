@@ -9,7 +9,9 @@ package aplicacion.fisioterapia.brazo;
  * @author ild_37
  */
 public class Vista extends javax.swing.JFrame {
-
+/**
+     Clase Vista
+     */
     /**
      * Creates new form Vista
      */
