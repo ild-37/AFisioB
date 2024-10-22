@@ -18,7 +18,10 @@ public class Main {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        System.out.println("Probando");
+        System.out.println("Iniciando Programa");
+        Vista ModeloVista=new Vista();
+        ModeloVista.setVisible(true);
+        System.out.println("Ventana visible");
     }
     
 }
