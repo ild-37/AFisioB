@@ -1,2 +1,2 @@
 # AFisioB
-Aplicacion Fisioterapa del Brazo(AFisioB) , se trata de una pequeña aplicAcion que ayuda a lidiar con los problemas fisicos del brazo con rutinas y consejos segun donde tengas molestias
+Aplicación Fisioterapia del Brazo(AFisioB) , se trata de una pequeña aplicación que ayuda a lidiar con los problemas físicos del brazo con rutinas y consejos segun donde tengas molestias.
