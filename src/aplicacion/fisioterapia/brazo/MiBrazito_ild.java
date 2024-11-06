@@ -8,15 +8,17 @@ package aplicacion.fisioterapia.brazo;
  *
  * @author ild_37
  */
-public class Vista extends javax.swing.JFrame {
 /**
      Clase Vista
      */
+public class MiBrazito_ild extends javax.swing.JFrame {
+
     /**
      * Creates new form Vista
      */
-    public Vista() {
+    public MiBrazito_ild() {
         initComponents();
+        System.out.println("Abrir ventana existo");
     }
 
     /**
@@ -50,25 +52,21 @@ public class Vista extends javax.swing.JFrame {
         btnNuevoILD.setBackground(new java.awt.Color(204, 204, 255));
         btnNuevoILD.setForeground(new java.awt.Color(0, 0, 0));
         btnNuevoILD.setText("Nuevo");
-        btnNuevoILD.setOpaque(true);
         PanelBotonera.add(btnNuevoILD);
 
         btnAbrirILD.setBackground(new java.awt.Color(204, 204, 255));
         btnAbrirILD.setForeground(new java.awt.Color(0, 0, 0));
         btnAbrirILD.setText("Abrir");
-        btnAbrirILD.setOpaque(true);
         PanelBotonera.add(btnAbrirILD);
 
         btnGuardarILD.setBackground(new java.awt.Color(204, 204, 255));
         btnGuardarILD.setForeground(new java.awt.Color(0, 0, 0));
         btnGuardarILD.setText("Guardar");
-        btnGuardarILD.setOpaque(true);
         PanelBotonera.add(btnGuardarILD);
 
         btnSalirILD.setBackground(new java.awt.Color(204, 204, 255));
         btnSalirILD.setForeground(new java.awt.Color(0, 0, 0));
         btnSalirILD.setText("Salir");
-        btnSalirILD.setOpaque(true);
         PanelBotonera.add(btnSalirILD);
 
         getContentPane().add(PanelBotonera, java.awt.BorderLayout.PAGE_START);

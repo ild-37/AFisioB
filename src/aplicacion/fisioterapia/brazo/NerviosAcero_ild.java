@@ -8,20 +8,22 @@ package aplicacion.fisioterapia.brazo;
  *
  * @author ild_37
  */
-public class Main {
+/**
+     Clase main 
+     */
+public class NerviosAcero_ild {
 
     /**
      * @param args the command line arguments
      */
-    /**
-     Clase main 
-     */
+   
     public static void main(String[] args) {
         // TODO code application logic here
         System.out.println("Iniciando Programa");
-        Vista ModeloVista=new Vista();
-        ModeloVista.setVisible(true);
-        System.out.println("Ventana visible");
+        MiBrazito_ild BrazoVistoso=new  MiBrazito_ild();
+        Musculitos_ild  MusculoOlimpia=new Musculitos_ild();
+        Mtr_Cerebrin_ild CerebroOrquesta=new Mtr_Cerebrin_ild(MusculoOlimpia, BrazoVistoso);
+        BrazoVistoso.setVisible(true);
     }
     
 }
