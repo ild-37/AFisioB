@@ -30,46 +30,18 @@ public class MiBrazito_ild extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
-        EstadoLabel = new javax.swing.JLabel();
-        PanelBotonera = new javax.swing.JPanel();
-        btnNuevoILD = new javax.swing.JButton();
-        btnAbrirILD = new javax.swing.JButton();
-        btnGuardarILD = new javax.swing.JButton();
-        btnSalirILD = new javax.swing.JButton();
+        jPanel1 = new javax.swing.JPanel();
+        LogoIncreible = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setText("AFisioB");
-        getContentPane().add(jLabel1, java.awt.BorderLayout.CENTER);
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setLayout(new java.awt.GridLayout());
 
-        EstadoLabel.setText("La vida Dura");
-        getContentPane().add(EstadoLabel, java.awt.BorderLayout.PAGE_END);
+        LogoIncreible.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/logo_afisiob.png"))); // NOI18N
+        jPanel1.add(LogoIncreible);
 
-        PanelBotonera.setBackground(new java.awt.Color(255, 204, 255));
-        PanelBotonera.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT));
-
-        btnNuevoILD.setBackground(new java.awt.Color(204, 204, 255));
-        btnNuevoILD.setForeground(new java.awt.Color(0, 0, 0));
-        btnNuevoILD.setText("Nuevo");
-        PanelBotonera.add(btnNuevoILD);
-
-        btnAbrirILD.setBackground(new java.awt.Color(204, 204, 255));
-        btnAbrirILD.setForeground(new java.awt.Color(0, 0, 0));
-        btnAbrirILD.setText("Abrir");
-        PanelBotonera.add(btnAbrirILD);
-
-        btnGuardarILD.setBackground(new java.awt.Color(204, 204, 255));
-        btnGuardarILD.setForeground(new java.awt.Color(0, 0, 0));
-        btnGuardarILD.setText("Guardar");
-        PanelBotonera.add(btnGuardarILD);
-
-        btnSalirILD.setBackground(new java.awt.Color(204, 204, 255));
-        btnSalirILD.setForeground(new java.awt.Color(0, 0, 0));
-        btnSalirILD.setText("Salir");
-        PanelBotonera.add(btnSalirILD);
-
-        getContentPane().add(PanelBotonera, java.awt.BorderLayout.PAGE_START);
+        getContentPane().add(jPanel1, java.awt.BorderLayout.CENTER);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -79,12 +51,7 @@ public class MiBrazito_ild extends javax.swing.JFrame {
      */
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel EstadoLabel;
-    private javax.swing.JPanel PanelBotonera;
-    private javax.swing.JButton btnAbrirILD;
-    private javax.swing.JButton btnGuardarILD;
-    private javax.swing.JButton btnNuevoILD;
-    private javax.swing.JButton btnSalirILD;
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel LogoIncreible;
+    private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }
