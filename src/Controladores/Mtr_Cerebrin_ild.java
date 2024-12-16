@@ -41,6 +41,7 @@ public void ConfiguracionVentana(){
          Brazo_fashion.setTitle(Antebrazo_duro.getTitulo());
          Brazo_fashion.setSize(new Dimension(Antebrazo_duro.getAncho(),Antebrazo_duro.getAlto()));
          Brazo_fashion.setLocationRelativeTo(null); 
+         Brazo_fashion.setResizable(false); // Deshabilita el cambio de tamaño
          
 }
 public void temporizador(){
