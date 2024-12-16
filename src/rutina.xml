@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ejercicios>
+    <Fecha>2024-12-16</Fecha>
+    <Ejercicio id="1">
+        <Nombre>Estiramiento del nervio cubital</Nombre>
+        <Descripcion>
+            Siéntate cómodamente con el brazo afectado extendido hacia un lado, a la altura del hombro. Dobla la muñeca hacia abajo 
+            y extiende los dedos como si estuvieras intentando empujar algo con el dorso de la mano. Inclina lentamente la cabeza 
+            hacia el lado contrario del brazo estirado para intensificar el estiramiento.
+        </Descripcion>
+        <Series>3</Series>
+        <Repeticiones>10</Repeticiones>
+        <Tiempo>10 segundos</Tiempo>
+        <Precauciones>
+            Mantén el movimiento lento y controlado. Detén el ejercicio si sientes dolor.
+        </Precauciones>
+    </Ejercicio>
+
+    <Ejercicio id="2">
+        <Nombre>Deslizamiento neural del nervio cubital</Nombre>
+        <Descripcion>
+            Comienza con el brazo afectado a un lado y el codo doblado en un ángulo de 90 grados, con la palma hacia arriba. 
+            Extiende lentamente la muñeca hacia atrás (flexión dorsal) mientras extiendes el codo. Luego, regresa a la posición inicial. 
+            Este ejercicio moviliza suavemente el nervio cubital.
+        </Descripcion>
+        <Series>3</Series>
+        <Repeticiones>10</Repeticiones>
+        <Tiempo>Indefinido</Tiempo>
+        <Precauciones>
+            Evita movimientos bruscos y detén el ejercicio si sientes entumecimiento o dolor.
+        </Precauciones>
+    </Ejercicio>
+
+    <Ejercicio id="3">
+        <Nombre>Rotación del cuello con estiramiento del brazo</Nombre>
+        <Descripcion>
+            Siéntate derecho. Extiende el brazo afectado hacia un lado con la palma hacia arriba. Inclina la cabeza hacia el hombro 
+            opuesto mientras rotas la muñeca para apuntar los dedos hacia el suelo. Mantén esta posición para sentir un estiramiento 
+            suave a lo largo del brazo.
+        </Descripcion>
+        <Series>3</Series>
+        <Repeticiones>15</Repeticiones>
+        <Tiempo>15 segundos</Tiempo>
+        <Precauciones>
+            No fuerces la inclinación del cuello más allá de tu rango cómodo. Este ejercicio debe sentirse como un estiramiento suave, 
+            no como un dolor agudo.
+        </Precauciones>
+    </Ejercicio>
+
+    <Fecha>2024-12-18</Fecha>
+    <Ejercicio id="4">
+        <Nombre>Estiramiento del nervio radial</Nombre>
+        <Descripcion>
+            Siéntate o ponte de pie con el brazo extendido hacia el frente, palma hacia abajo. Con la otra mano, tira suavemente de 
+            los dedos hacia abajo, de modo que la muñeca se flexione y el brazo se estire. Este ejercicio ayuda a liberar la tensión 
+            del nervio radial.
+        </Descripcion>
+        <Series>3</Series>
+        <Repeticiones>10</Repeticiones>
+        <Tiempo>20 segundos</Tiempo>
+        <Precauciones>
+            No estires demasiado rápido ni con demasiada fuerza, para evitar lesiones.
+        </Precauciones>
+    </Ejercicio>
+
+    <Ejercicio id="5">
+        <Nombre>Flexión y extensión de muñeca con tensión</Nombre>
+        <Descripcion>
+            Coloca el brazo extendido con la palma hacia abajo. Flexiona la muñeca hacia abajo y luego extiéndela hacia atrás, 
+            manteniendo la muñeca recta. Este movimiento de flexión y extensión ayuda a aliviar la presión en el nervio radial.
+        </Descripcion>
+        <Series>3</Series>
+        <Repeticiones>12</Repeticiones>
+        <Tiempo>Indefinido</Tiempo>
+        <Precauciones>
+            Realiza los movimientos de forma controlada, sin forzar la muñeca.
+        </Precauciones>
+    </Ejercicio>
+
+    <Ejercicio id="6">
+        <Nombre>Deslizamiento del nervio radial</Nombre>
+        <Descripcion>
+            Extiende el brazo afectado hacia un lado, con la palma hacia abajo y el codo ligeramente doblado. Flexiona y extiende 
+            la muñeca lentamente mientras mueves el brazo de atrás hacia adelante. Esto permite que el nervio radial se deslice 
+            y se libere de tensiones.
+        </Descripcion>
+        <Series>3</Series>
+        <Repeticiones>10</Repeticiones>
+        <Tiempo>Indefinido</Tiempo>
+        <Precauciones>
+            Mantén el movimiento suave y evita cualquier tirón brusco que pueda causar dolor.
+        </Precauciones>
+    </Ejercicio>
+</Ejercicios>
