@@ -36,6 +36,7 @@ public class MibrazitoMain extends javax.swing.JFrame {
         jMenu3 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(700, 500));
 
         jPanel2.setLayout(new java.awt.BorderLayout());
 

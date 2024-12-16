@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AppearanceSettings>
+    <Title>Appearance</Title>
+    <Colors>
+        <Background>
+            <Color>#FFFFFF</Color> <!-- Color de fondo en formato hexadecimal (blanco) -->
+        </Background>
+        <Button>
+            <Color>#0000FF</Color> <!-- Color de botón en formato hexadecimal (azul) -->
+        </Button>
+    </Colors>
+</AppearanceSettings>
