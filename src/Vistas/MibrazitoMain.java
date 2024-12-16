@@ -4,6 +4,8 @@
  */
 package Vistas;
 
+import java.awt.event.ActionListener;
+
 /**
  *
  * @author ild_37
@@ -27,7 +29,7 @@ public class MibrazitoMain extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel2 = new javax.swing.JPanel();
-        btnAjustes = new javax.swing.JButton();
+        BtnAjustes = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenu2 = new javax.swing.JMenu();
@@ -35,12 +37,12 @@ public class MibrazitoMain extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jPanel2.setLayout(new java.awt.BorderLayout());
 
-        btnAjustes.setBackground(new java.awt.Color(204, 255, 255));
-        btnAjustes.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
-        btnAjustes.setText("⚙️");
-        jPanel2.add(btnAjustes, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 10, 50, 40));
+        BtnAjustes.setBackground(new java.awt.Color(204, 255, 255));
+        BtnAjustes.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
+        BtnAjustes.setText("⚙️");
+        jPanel2.add(BtnAjustes, java.awt.BorderLayout.LINE_END);
 
         getContentPane().add(jPanel2, java.awt.BorderLayout.CENTER);
 
@@ -63,11 +65,19 @@ public class MibrazitoMain extends javax.swing.JFrame {
      */
  
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnAjustes;
+    private javax.swing.JButton BtnAjustes;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JPanel jPanel2;
     // End of variables declaration//GEN-END:variables
+
+ public void ClickBtnAjustas(ActionListener l) {
+        BtnAjustes.addActionListener(l);
+    }
+
+
+
+
 }
