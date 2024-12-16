@@ -11,12 +11,12 @@ package Vistas;
 /**
      Clase Vista
      */
-public class MiBrazito_ild extends javax.swing.JFrame {
+public class Mibrazito_ildCarga extends javax.swing.JFrame {
 
     /**
      * Creates new form Vista
      */
-    public MiBrazito_ild() {
+    public Mibrazito_ildCarga() {
         initComponents();
         System.out.println("Abrir ventana existo");
     }

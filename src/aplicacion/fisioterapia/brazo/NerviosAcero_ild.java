@@ -5,7 +5,7 @@
 package aplicacion.fisioterapia.brazo;
 
 import Modelos.Musculitos_ild;
-import Vistas.MiBrazito_ild;
+import Vistas.Mibrazito_ildCarga;
 import Controladores.Mtr_Cerebrin_ild;
 
 /**
@@ -24,7 +24,7 @@ public class NerviosAcero_ild {
     public static void main(String[] args) {
         // TODO code application logic here
         System.out.println("Iniciando Programa");
-        MiBrazito_ild BrazoVistoso=new  MiBrazito_ild();
+        Mibrazito_ildCarga BrazoVistoso=new  Mibrazito_ildCarga();
         Musculitos_ild  MusculoOlimpia=new Musculitos_ild();
         Mtr_Cerebrin_ild CerebroOrquesta=new Mtr_Cerebrin_ild(MusculoOlimpia, BrazoVistoso);
         
