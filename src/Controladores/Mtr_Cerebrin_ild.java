@@ -37,9 +37,9 @@ public class Mtr_Cerebrin_ild {
     
 
 public void ConfiguracionVentana(){
-         Brazo_fashion.setIconImage(getIconImage());
+         Brazo_fashion.setIconImage(Antebrazo_duro.getIconImage());
          Brazo_fashion.setTitle(Antebrazo_duro.getTitulo());
-         Brazo_fashion.setSize(new Dimension(700, 500));
+         Brazo_fashion.setSize(new Dimension(Antebrazo_duro.getAncho(),Antebrazo_duro.getAlto()));
          Brazo_fashion.setLocationRelativeTo(null); 
          
 }
@@ -55,14 +55,5 @@ public void temporizador(){
         }).start();
     }
 
-   public Image getIconImage() {
-    // Cargar la imagen desde el recurso
-    Image originalImage = Toolkit.getDefaultToolkit()
-            .getImage(ClassLoader.getSystemResource("imagenes/logo_afisiob.png"));
-    // Escalar la imagen al tamaño deseado
-    int width = 80;  // Ancho deseado del logo
-    int height = 80; // Altura deseada del logo
-    Image scaledImage = originalImage.getScaledInstance(width, height, Image.SCALE_SMOOTH);
-    return scaledImage;
-}
+   
 }
