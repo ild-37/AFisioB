@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package aplicacion.fisioterapia.brazo;
+package Vistas;
 
 /**
  *
@@ -36,9 +36,7 @@ public class MiBrazito_ild extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel1.setLayout(new java.awt.GridLayout());
-
-        LogoIncreible.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/logo_afisiob.png"))); // NOI18N
+        jPanel1.setLayout(new java.awt.GridLayout(1, 0));
         jPanel1.add(LogoIncreible);
 
         getContentPane().add(jPanel1, java.awt.BorderLayout.CENTER);

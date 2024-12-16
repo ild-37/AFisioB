@@ -4,6 +4,10 @@
  */
 package aplicacion.fisioterapia.brazo;
 
+import Modelos.Musculitos_ild;
+import Vistas.MiBrazito_ild;
+import Controladores.Mtr_Cerebrin_ild;
+
 /**
  *
  * @author ild_37
@@ -23,7 +27,7 @@ public class NerviosAcero_ild {
         MiBrazito_ild BrazoVistoso=new  MiBrazito_ild();
         Musculitos_ild  MusculoOlimpia=new Musculitos_ild();
         Mtr_Cerebrin_ild CerebroOrquesta=new Mtr_Cerebrin_ild(MusculoOlimpia, BrazoVistoso);
-        BrazoVistoso.setVisible(true);
+        
     }
     
 }
