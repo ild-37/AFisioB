@@ -27,7 +27,7 @@ public class MibrazitoMain extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel2 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
+        btnAjustes = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenu2 = new javax.swing.JMenu();
@@ -37,10 +37,10 @@ public class MibrazitoMain extends javax.swing.JFrame {
 
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton1.setBackground(new java.awt.Color(204, 255, 255));
-        jButton1.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
-        jButton1.setText("⚙️");
-        jPanel2.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 10, 50, 40));
+        btnAjustes.setBackground(new java.awt.Color(204, 255, 255));
+        btnAjustes.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
+        btnAjustes.setText("⚙️");
+        jPanel2.add(btnAjustes, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 10, 50, 40));
 
         getContentPane().add(jPanel2, java.awt.BorderLayout.CENTER);
 
@@ -63,7 +63,7 @@ public class MibrazitoMain extends javax.swing.JFrame {
      */
  
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton btnAjustes;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;

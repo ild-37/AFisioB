@@ -5,6 +5,8 @@
 package Controladores;
 
 import Modelos.Musculitos_ild;
+import Vistas.Configuracion;
+import Vistas.MibrazitoMain;
 import Vistas.Mibrazito_ildCarga;
 import java.awt.Dimension;
 import java.awt.Image;
@@ -21,8 +23,11 @@ import javax.swing.Timer;
      */ 
 public class Mtr_Cerebrin_ild {
      
-    private Musculitos_ild Antebrazo_duro=new Musculitos_ild();
+   private Musculitos_ild Antebrazo_duro=new Musculitos_ild();
    private Mibrazito_ildCarga Brazo_fashion=new Mibrazito_ildCarga();
+   private  mtr_Cerbrin_ild_Main MasterDelMain;
+   private MibrazitoMain Main_fashion;
+   private Configuracion ConfigDialog;
 
     public Mtr_Cerebrin_ild(Musculitos_ild Antebrazo_duro , Mibrazito_ildCarga Brazo_fashion) {
         this.Antebrazo_duro=Antebrazo_duro;
@@ -31,7 +36,7 @@ public class Mtr_Cerebrin_ild {
         ConfiguracionVentana();
         Brazo_fashion.setVisible(true);
         temporizador();
-      
+        
     }
         
     
@@ -48,7 +53,9 @@ public void temporizador(){
     new Thread(() -> {
             try {
                 Thread.sleep(15000); // Pausa de 15 segundos
+                llamar_Ventanita_Main();//llamo a la otra ventana antes de cerrar la otra
                 Brazo_fashion.dispose(); // Cierra la ventana
+                
                 System.out.println("Ventana cerrada después de 15 segundos.");
             } catch (InterruptedException e) {
                 e.printStackTrace();
@@ -56,5 +63,10 @@ public void temporizador(){
         }).start();
     }
 
+   public void llamar_Ventanita_Main(){
+       Main_fashion=new MibrazitoMain();
+       System.out.println("hola");
+       MasterDelMain=new mtr_Cerbrin_ild_Main(null, Main_fashion, Antebrazo_duro);
    
+   }
 }
