@@ -89,7 +89,7 @@ public class mtr_Cerbrin_ild_Main implements ActionListener{
     public void actionPerformed(ActionEvent e) {
         System.out.println("  Se ha producido un click");
         switch (e.getActionCommand()) {
-            case "Ajustes":
+            case "⚙️":
                 System.out.println("Se ha clickeado el botón de ajustes");
                 AjustesVentanitaMain = new Configuracion(VentanitaMain, true);
                 AjustesVentanitaMain.ClickBtnCambiar(this);

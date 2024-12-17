@@ -36,9 +36,8 @@ public class MibrazitoMain extends javax.swing.JFrame {
         jMenu3 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(700, 500));
 
-        BtnAjustes.setText("Ajustes");
+        BtnAjustes.setText("⚙️");
         getContentPane().add(BtnAjustes, java.awt.BorderLayout.LINE_END);
 
         jMenu1.setText("Añadir");
@@ -79,7 +78,7 @@ public class MibrazitoMain extends javax.swing.JFrame {
      * Configura el comando de acción para el botón de ajustes.
      */
     public void Acciones() {
-        BtnAjustes.setActionCommand("Ajustes");
+        BtnAjustes.setActionCommand("⚙️");
     }
 
 }
