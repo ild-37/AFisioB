@@ -4,8 +4,19 @@
  */
 package Modelos;
 
+import java.awt.Color;
 import java.awt.Image;
 import java.awt.Toolkit;
+import java.io.File;
+import javax.lang.model.element.Element;
+import javax.swing.text.Document;
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.dom.DOMSource;
+import javax.xml.transform.stream.StreamResult;
+
 
 /**
  *
@@ -41,6 +52,104 @@ public class Musculitos_ild {
     Image scaledImage = originalImage.getScaledInstance(width, height, Image.SCALE_SMOOTH);
     return scaledImage;
     
+}
+    public String ObtenerColorXml() {
+        String color="";
+        try {
+            // Ruta del archivo XML
+            File xmlFile = new File("src/Apariencia.xml");
+
+            // Crear un parser para leer el archivo XML
+            DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+            DocumentBuilder builder = factory.newDocumentBuilder();
+            org.w3c.dom.Document document = builder.parse(xmlFile);
+
+            // Normalizar el documento
+            document.getDocumentElement().normalize();
+
+            // Obtener el nodo <Colors> y luego el nodo <Background> y dentro de ese el nodo <Color>
+            org.w3c.dom.Element colorsElement = (org.w3c.dom.Element) document.getElementsByTagName("Colors").item(0);
+            if (colorsElement != null) {
+                org.w3c.dom.Element backgroundColor = (org.w3c.dom.Element) colorsElement.getElementsByTagName("Background").item(0);
+                if (backgroundColor != null) {
+                    org.w3c.dom.Element colorElement = (org.w3c.dom.Element) backgroundColor.getElementsByTagName("Color").item(0);
+                    if (colorElement != null) {
+                         color = colorElement.getTextContent();
+                        System.out.println("Color actual de fondo: " + color);
+                    } else {
+                        System.out.println("El nodo <Color> no se encontró en <Background>.");
+                    }
+                } else {
+                    System.out.println("El nodo <Background> no se encontró dentro de <Colors>.");
+                }
+            } else {
+                System.out.println("El nodo <Colors> no se encontró en el documento.");
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return color;
+    }
+
+    public void ActualizarColor(String NuevoColor) {
+        try {
+            // Ruta del archivo XML
+            File xmlFile = new File("src/Apariencia.xml");
+
+            // Crear un parser para leer el archivo XML
+            DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+            DocumentBuilder builder = factory.newDocumentBuilder();
+            org.w3c.dom.Document document = builder.parse(xmlFile);
+
+            // Normalizar el documento
+            document.getDocumentElement().normalize();
+
+            // Obtener el nodo <Colors> y luego el nodo <Background> y dentro de ese el nodo <Color>
+            org.w3c.dom.Element colorsElement = (org.w3c.dom.Element) document.getElementsByTagName("Colors").item(0);
+            if (colorsElement != null) {
+                org.w3c.dom.Element backgroundColor = (org.w3c.dom.Element) colorsElement.getElementsByTagName("Background").item(0);
+                if (backgroundColor != null) {
+                    org.w3c.dom.Element colorElement = (org.w3c.dom.Element) backgroundColor.getElementsByTagName("Color").item(0);
+                    if (colorElement != null) {
+                        // Modificar el color
+                         // Color hexadecimal nuevo
+                        colorElement.setTextContent(NuevoColor);
+                        System.out.println("Color de fondo actualizado a: " + NuevoColor);
+
+                        // Guardar los cambios en el archivo XML
+                        TransformerFactory transformerFactory = TransformerFactory.newInstance();
+                        Transformer transformer = transformerFactory.newTransformer();
+                        DOMSource source = new DOMSource(document);
+                        StreamResult result = new StreamResult(xmlFile);
+                        transformer.transform(source, result);
+
+                        System.out.println("Archivo XML actualizado correctamente.");
+                    } else {
+                        System.out.println("El nodo <Color> no se encontró en <Background>.");
+                    }
+                } else {
+                    System.out.println("El nodo <Background> no se encontró dentro de <Colors>.");
+                }
+            } else {
+                System.out.println("El nodo <Colors> no se encontró en el documento.");
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+    public Color rgbStringToColor(String rgb) {
+    try {
+        String[] parts = rgb.split(",");
+        int r = Integer.parseInt(parts[0].trim());
+        int g = Integer.parseInt(parts[1].trim());
+        int b = Integer.parseInt(parts[2].trim());
+        return new Color(r, g, b);
+    } catch (Exception e) {
+        System.out.println("Error al convertir el string RGB: " + rgb);
+        return Color.BLACK; // Color por defecto en caso de error
+    }
 }
     
 }

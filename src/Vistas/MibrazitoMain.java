@@ -17,6 +17,7 @@ public class MibrazitoMain extends javax.swing.JFrame {
      */
     public MibrazitoMain() {
         initComponents();
+        Acciones();
     }
 
     /**
@@ -28,7 +29,6 @@ public class MibrazitoMain extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel2 = new javax.swing.JPanel();
         BtnAjustes = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
@@ -38,14 +38,8 @@ public class MibrazitoMain extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(700, 500));
 
-        jPanel2.setLayout(new java.awt.BorderLayout());
-
-        BtnAjustes.setBackground(new java.awt.Color(204, 255, 255));
-        BtnAjustes.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
-        BtnAjustes.setText("⚙️");
-        jPanel2.add(BtnAjustes, java.awt.BorderLayout.LINE_END);
-
-        getContentPane().add(jPanel2, java.awt.BorderLayout.CENTER);
+        BtnAjustes.setText("Ajustes");
+        getContentPane().add(BtnAjustes, java.awt.BorderLayout.LINE_END);
 
         jMenu1.setText("Añadir");
         jMenuBar1.add(jMenu1);
@@ -71,10 +65,11 @@ public class MibrazitoMain extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JPanel jPanel2;
     // End of variables declaration//GEN-END:variables
-
- public void ClickBtnAjustas(ActionListener l) {
+ public void Acciones(){
+ BtnAjustes.setActionCommand("Ajustes");
+ }
+ public void ClickBtnAjustes(ActionListener l) {
         BtnAjustes.addActionListener(l);
     }
 

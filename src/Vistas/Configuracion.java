@@ -4,6 +4,9 @@
  */
 package Vistas;
 
+import java.awt.event.ActionListener;
+import javax.swing.JColorChooser;
+
 /**
  *
  * @author ild_37
@@ -16,6 +19,7 @@ public class Configuracion extends javax.swing.JDialog {
     public Configuracion(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
+        Acciones();
     }
 
     /**
@@ -27,17 +31,43 @@ public class Configuracion extends javax.swing.JDialog {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel1 = new javax.swing.JLabel();
+        BtnCambiar = new javax.swing.JButton();
+        JColorColores = new javax.swing.JColorChooser();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+
+        jLabel1.setText("Color de fondo");
+
+        BtnCambiar.setText("Cambiar");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(JColorColores, javax.swing.GroupLayout.PREFERRED_SIZE, 653, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 324, Short.MAX_VALUE))
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(47, 47, 47)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(258, 258, 258)
+                        .addComponent(BtnCambiar, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(34, 34, 34)
+                .addComponent(jLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(JColorColores, javax.swing.GroupLayout.PREFERRED_SIZE, 343, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(19, 19, 19)
+                .addComponent(BtnCambiar)
+                .addContainerGap(84, Short.MAX_VALUE))
         );
 
         pack();
@@ -49,5 +79,24 @@ public class Configuracion extends javax.swing.JDialog {
   
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton BtnCambiar;
+    private javax.swing.JColorChooser JColorColores;
+    private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
+
+
+ public void ClickBtnCambiar(ActionListener l) {
+    BtnCambiar.addActionListener(l);
+}
+
+    public JColorChooser getJColorColores() {
+        return JColorColores;
+    }
+
+    public void setJColorColores(JColorChooser JColorColores) {
+        this.JColorColores = JColorColores;
+    }
+  public void Acciones(){
+    BtnCambiar.setActionCommand("Cambiar");
+ }
 }

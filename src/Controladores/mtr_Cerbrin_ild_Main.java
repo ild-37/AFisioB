@@ -7,9 +7,12 @@ package Controladores;
 import Modelos.Musculitos_ild;
 import Vistas.Configuracion;
 import Vistas.MibrazitoMain;
+import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.ComponentListener;
+import java.awt.event.WindowListener;
 
 /**
  *
@@ -39,10 +42,13 @@ public void ConfiguracionVentana(){
          VentanitaMain.setSize(new Dimension(ModeloVentanita.getAncho(),ModeloVentanita.getAlto()));
          VentanitaMain.setLocationRelativeTo(null); 
          VentanitaMain.setResizable(false); // Deshabilita el cambio de tamaño
+          VentanitaMain.getContentPane().setBackground(ModeloVentanita.rgbStringToColor(ModeloVentanita.ObtenerColorXml()));
+          VentanitaMain.repaint();
          
         }
  public void asociarListenersEscuchadores (ActionListener listener){
- VentanitaMain.ClickBtnAjustas(this);
+ VentanitaMain.ClickBtnAjustes(this);
+ AjustesVentanitaMain.ClickBtnCambiar(this);
 
  }
 public void actionPerformed(ActionEvent e){
@@ -50,10 +56,28 @@ public void actionPerformed(ActionEvent e){
         switch (e.getActionCommand()){
         case "Ajustes":
             System.out.println("Se a clickado el boton de ajustes");
+            AjustesVentanitaMain =new Configuracion(VentanitaMain, true);
+            AjustesVentanitaMain.ClickBtnCambiar(this);
+            AjustesVentanitaMain.setVisible(true);
+            
             break;     
+        case "Cambiar":
+            System.out.println("se ha pulsado cambiar color");
+            //VentanitaMain.setBackground(Color.AjustesVentanitaMain.getJColorColores());
+            Color nuevoColor = AjustesVentanitaMain.getJColorColores().getColor();
+            System.out.println("Nuevo color seleccionado: " + nuevoColor);
+            
+            // Cambiar el fondo de la ventana principal
+            VentanitaMain.getContentPane().setBackground(nuevoColor);
+            VentanitaMain.repaint();
+            ModeloVentanita.ActualizarColor(nuevoColor.toString());
+            break;
+        default:
+            System.out.println("Comando de acción desconocido: " + e.getActionCommand());
+            }
         }
     }
 
-}
+
    
 

@@ -52,7 +52,7 @@ public void ConfiguracionVentana(){
 public void temporizador(){
     new Thread(() -> {
             try {
-                Thread.sleep(15000); // Pausa de 15 segundos
+                Thread.sleep(5000); // Pausa de 15 segundos
                 llamar_Ventanita_Main();//llamo a la otra ventana antes de cerrar la otra
                 Brazo_fashion.dispose(); // Cierra la ventana
                 
