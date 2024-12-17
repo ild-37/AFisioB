@@ -26,7 +26,6 @@ public class NerviosAcero_ild {
         System.out.println("Iniciando Programa");
         Mibrazito_ildCarga BrazoVistoso = new Mibrazito_ildCarga();
         Musculitos_ild MusculoOlimpia = new Musculitos_ild();
-        
         // Inicializa el controlador con el modelo y la vista
         Mtr_Cerebrin_ild CerebroOrquesta = new Mtr_Cerebrin_ild(MusculoOlimpia, BrazoVistoso);
     }

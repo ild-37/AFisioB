@@ -190,10 +190,19 @@ public class Musculitos_ild {
      */
     public Color rgbStringToColor(String rgb) {
         try {
-            String[] parts = rgb.split(",");
-            int r = Integer.parseInt(parts[0].trim());
-            int g = Integer.parseInt(parts[1].trim());
-            int b = Integer.parseInt(parts[2].trim());
+            
+
+        // Eliminar el texto innecesario y los corchetes
+        rgb = rgb.substring(rgb.indexOf('[') + 1, rgb.indexOf(']'));
+
+        // Dividir la cadena en partes
+        String[] components = rgb.split(",");
+
+        // Extraer los valores
+        int r = Integer.parseInt(components[0].split("=")[1]);
+        int g = Integer.parseInt(components[1].split("=")[1]);
+        int b = Integer.parseInt(components[2].split("=")[1]);
+            
             return new Color(r, g, b);
         } catch (Exception e) {
             System.out.println("Error al convertir el string RGB: " + rgb);

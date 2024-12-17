@@ -2,7 +2,7 @@
     <Title>Appearance</Title>
     <Colors>
         <Background>
-            <Color>java.awt.Color[r=0,g=153,b=153]</Color> <!-- Color de fondo en formato hexadecimal (blanco) -->
+            <Color>java.awt.Color[r=102,g=153,b=0]</Color> <!-- Color de fondo en formato hexadecimal (blanco) -->
         </Background>
         <Button>
             <Color>#0000FF</Color> <!-- Color de botón en formato hexadecimal (azul) -->
