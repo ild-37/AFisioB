@@ -13,8 +13,12 @@ import javax.swing.JColorChooser;
  */
 public class Configuracion extends javax.swing.JDialog {
 
-    /**
-     * Creates new form Configuracion
+     /**
+     * Crea una nueva instancia de la ventana de configuración.
+     *
+     * @param parent la ventana principal que sirve como propietario de esta ventana.
+     * @param modal si es verdadero, la ventana será modal, lo que significa que bloqueará la interacción
+     *              con otras ventanas hasta que se cierre.
      */
     public Configuracion(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
@@ -85,18 +89,37 @@ public class Configuracion extends javax.swing.JDialog {
     // End of variables declaration//GEN-END:variables
 
 
- public void ClickBtnCambiar(ActionListener l) {
-    BtnCambiar.addActionListener(l);
-}
+ /**
+     * Asocia un `ActionListener` al botón de cambio de color.
+     * 
+     * @param l el `ActionListener` que manejará los eventos del botón.
+     */
+    public void ClickBtnCambiar(ActionListener l) {
+        BtnCambiar.addActionListener(l);
+    }
 
+    /**
+     * Obtiene el selector de color (`JColorChooser`) de la ventana de configuración.
+     *
+     * @return el componente `JColorChooser` que permite al usuario seleccionar un color.
+     */
     public JColorChooser getJColorColores() {
         return JColorColores;
     }
 
+    /**
+     * Establece un nuevo `JColorChooser` en la ventana de configuración.
+     * 
+     * @param JColorColores el nuevo selector de color que reemplazará al existente.
+     */
     public void setJColorColores(JColorChooser JColorColores) {
         this.JColorColores = JColorColores;
     }
-  public void Acciones(){
-    BtnCambiar.setActionCommand("Cambiar");
- }
+
+    /**
+     * Configura las acciones del botón, incluyendo su comando de acción.
+     */
+    public void Acciones() {
+        BtnCambiar.setActionCommand("Cambiar");
+    }
 }

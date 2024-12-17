@@ -66,14 +66,22 @@ public class MibrazitoMain extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenuBar jMenuBar1;
     // End of variables declaration//GEN-END:variables
- public void Acciones(){
- BtnAjustes.setActionCommand("Ajustes");
- }
- public void ClickBtnAjustes(ActionListener l) {
+  /**
+     * Asocia un `ActionListener` al botón de ajustes.
+     * 
+     * @param l el `ActionListener` que manejará los eventos del botón.
+     */
+    public void ClickBtnAjustes(ActionListener l) {
         BtnAjustes.addActionListener(l);
     }
 
-
-
+    /**
+     * Configura el comando de acción para el botón de ajustes.
+     */
+    public void Acciones() {
+        BtnAjustes.setActionCommand("Ajustes");
+    }
 
 }
+
+

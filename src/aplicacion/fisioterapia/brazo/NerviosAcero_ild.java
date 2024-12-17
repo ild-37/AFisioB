@@ -21,13 +21,15 @@ public class NerviosAcero_ild {
      * @param args the command line arguments
      */
    
-    public static void main(String[] args) {
-        // TODO code application logic here
+     public static void main(String[] args) {
+        // Inicializa la vista de carga y el modelo
         System.out.println("Iniciando Programa");
-        Mibrazito_ildCarga BrazoVistoso=new  Mibrazito_ildCarga();
-        Musculitos_ild  MusculoOlimpia=new Musculitos_ild();
-        Mtr_Cerebrin_ild CerebroOrquesta=new Mtr_Cerebrin_ild(MusculoOlimpia, BrazoVistoso);
+        Mibrazito_ildCarga BrazoVistoso = new Mibrazito_ildCarga();
+        Musculitos_ild MusculoOlimpia = new Musculitos_ild();
         
+        // Inicializa el controlador con el modelo y la vista
+        Mtr_Cerebrin_ild CerebroOrquesta = new Mtr_Cerebrin_ild(MusculoOlimpia, BrazoVistoso);
     }
+
     
 }
